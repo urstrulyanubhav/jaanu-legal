@@ -1,0 +1,23 @@
+# The bytes GitHub Pages serves must match what a clone produces.
+#
+# WHY THIS FILE EXISTS, AND WHY IT LOOKS LIKE TIDYING
+#
+# `core.autocrlf` is on for this machine. Committing terms.html on 2026-09-11
+# produced git's own warning:
+#
+#     in the working copy of 'terms.html', LF will be replaced by CRLF the
+#     next time Git touches it
+#
+# All four files are LF in the index today, but nothing was pinning them - so a
+# fresh clone here would check out CRLF, and the first commit made from that
+# copy would write CRLF into the index and change every byte GitHub Pages
+# serves. Silently, and on a page whose URL is registered in the Meta app
+# settings.
+#
+# The sibling repository heyjaanu-site already carries this exact file, added
+# after the same warning, with a note calling it load-bearing. This one did not,
+# which is the only reason the lesson had to be learned twice.
+*.html text eol=lf
+*.txt  text eol=lf
+*.xml  text eol=lf
+*.png  binary
