@@ -32,7 +32,7 @@
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="sub">Heyjaanu · Last updated 23 September 2026</p>
+<p class="sub">Heyjaanu · Last updated 26 September 2026</p>
 
 <p>Heyjaanu (&ldquo;we&rdquo;, &ldquo;the service&rdquo;) is a tool that lets an Instagram
 business or creator account reply automatically to comments on its own posts, by sending
@@ -71,9 +71,11 @@ access token scoped to that account. Using it, we receive or read:</p>
   <tr>
     <td>Comments on the operator&rsquo;s own posts — the comment text, its ID, the post
         ID, and the commenter&rsquo;s Instagram-scoped ID and username</td>
-    <td>This is the trigger. Every top-level comment is answered, so the text is
-        read whether or not it contains any particular word &mdash; the service does
-        not filter by keyword. Without it there is nothing to respond to.</td>
+    <td>This is the trigger. The text of every top-level comment is read, including
+        when a workflow is set to answer only comments containing certain keywords
+        &mdash; reading the comment is how the service decides whether it matches. By
+        default every top-level comment is answered. Without it there is nothing to
+        respond to.</td>
   </tr>
   <tr>
     <td>Post (media) IDs, captions, permalinks and thumbnails</td>
@@ -107,8 +109,10 @@ more:</p>
 
 <ol>
   <li>A person comments on the operator&rsquo;s post.</li>
-  <li>The service sends that person one private reply. Every top-level comment is
-      answered; replies are not restricted by keyword.</li>
+  <li>The service sends that person one private reply. By default every top-level
+      comment is answered; the operator can instead set a workflow to answer only
+      comments containing chosen keywords, and a comment that does not match receives
+      no reply.</li>
   <li>Every automated message carries a disclosure identifying it as automated.</li>
 </ol>
 
