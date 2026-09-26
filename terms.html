@@ -25,7 +25,7 @@
 <body>
 
 <h1>Terms of Service</h1>
-<p class="sub">Heyjaanu · Last updated 23 September 2026</p>
+<p class="sub">Heyjaanu · Last updated 26 September 2026</p>
 
 <h2>1. What the service does</h2>
 
@@ -65,14 +65,31 @@ throughout.</p>
   which is why this drifted unnoticed for a phase.
 -->
 <p>It is run for you rather than sold to you. We build the workflows, run them, watch them,
-and report on them, rather than handing you a tool and leaving you to operate it. There is
-no self-service sign-up, and that is how the service is built rather than something we
-are waiting on. The app operates under Meta&rsquo;s Standard Access, which covers Instagram
-professional accounts we own or manage and accounts whose holder has been granted a role
-on our app. Connecting your account therefore involves granting us that role or that
-management access, and the connection is performed by us on your authority. Offering the
-service to strangers on a sign-up basis would instead require Meta Advanced Access, App
-Review and Business Verification, none of which this service relies on today.</p>
+and report on them, rather than handing you a tool and leaving you to operate it.</p>
+
+<!--
+  2026-09-26, approved by the operator: the paragraph that stood here said "There
+  is no self-service sign-up" and "the connection is performed by us on your
+  authority", and that selling on a sign-up basis would need Advanced Access. All
+  three had stopped being true: sign-up has been open since Phase 129, the customer
+  authorises Instagram through Instagram's own consent screen (we perform only the
+  tester invitation), and Meta's rule is a conjunction - accounts neither owned nor
+  managed AND usable by people with no role - so the tester role keeps every served
+  account inside Standard Access. Same wording, verbatim, as heyjaanu-web
+  content/legal.ts; tests/legal.test.mjs binds the new facts in both.
+-->
+<p>You create your own account, and you authorise Instagram yourself: the connection is made
+through Instagram&rsquo;s own consent screen, and no access token is ever typed, pasted or
+sent to us. One step in the middle is ours and is done by a person &mdash; we add your
+Instagram professional account as a tester on our Meta app, and you accept that invitation
+in the Instagram app. Until you accept it, Instagram refuses the connection.</p>
+
+<p>That role is also why nothing further is needed from Meta. The app operates under
+Meta&rsquo;s Standard Access, which covers Instagram professional accounts we own or
+manage and accounts whose holder has been granted a role on our app, and every account we
+serve holds that role. Advanced Access, App Review and Business Verification would be
+required only for an app usable by people holding no role on it, and this service relies
+on none of them.</p>
 
 <h2>2. Your responsibilities</h2>
 
